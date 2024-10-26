@@ -52,7 +52,7 @@ def get_html(url, attempts=1, timeout=10, delay=1):
     return None
 
 
-def save_pages(file_name, url_template, first_page_id=19504, last_page_id=19515, step=1, delay=1):
+def save_pages(file_name, url_template, first_page_id=0, last_page_id=10, step=1, delay=1):
     current_dir = os.path.dirname(os.path.abspath(__file__))
     file_path = os.path.join(current_dir, file_name)
     current_page_num = 1
